@@ -28,7 +28,7 @@ def obter_cep_por_lat_long(latitude, longitude, api_key):
 
 
 
-df = pd.read_excel('latlong.xlsx', sheet_name='latlong') #transforma o xlsx em um df para ser manipulado
+df = pd.read_excel('baseEnderecos.xlsx', sheet_name='latlong') #transforma o xlsx em um df para ser manipulado
 lista_latitude = df['Latitude'].to_list() #transforma a coluna em lista
 lista_longitude = df['Longitude'].to_list()
 lista_ceps = [] 
